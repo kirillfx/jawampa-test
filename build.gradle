@@ -1,0 +1,19 @@
+group 'com.tradingsystems'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'ws.wamp.jawampa', name: 'jawampa-parent', version: '0.5.0', ext: 'pom'
+    // https://mvnrepository.com/artifact/ws.wamp.jawampa/jawampa-core
+    compile group: 'ws.wamp.jawampa', name: 'jawampa-core', version: '0.5.0'
+    // https://mvnrepository.com/artifact/ws.wamp.jawampa/jawampa-netty
+    compile group: 'ws.wamp.jawampa', name: 'jawampa-netty', version: '0.5.0'
+}
